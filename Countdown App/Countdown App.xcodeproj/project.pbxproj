@@ -14,6 +14,7 @@
 		C3E7C02A22E65A4100F3019E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3E7C02822E65A4100F3019E /* LaunchScreen.storyboard */; };
 		C3E7C03522E65A4100F3019E /* Countdown_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E7C03422E65A4100F3019E /* Countdown_AppTests.swift */; };
 		C3E7C04022E65A4100F3019E /* Countdown_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E7C03F22E65A4100F3019E /* Countdown_AppUITests.swift */; };
+		C3E7C04E22E665B800F3019E /* rplogo.png in Resources */ = {isa = PBXBuildFile; fileRef = C3E7C04D22E665B800F3019E /* rplogo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		C3E7C03B22E65A4100F3019E /* Countdown AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Countdown AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3E7C03F22E65A4100F3019E /* Countdown_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Countdown_AppUITests.swift; sourceTree = "<group>"; };
 		C3E7C04122E65A4100F3019E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3E7C04D22E665B800F3019E /* rplogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = rplogo.png; path = ../../../rplogo.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				C3E7C01F22E65A3E00F3019E /* AppDelegate.swift */,
 				C3E7C02122E65A3E00F3019E /* ViewController.swift */,
+				C3E7C04D22E665B800F3019E /* rplogo.png */,
 				C3E7C02322E65A3E00F3019E /* Main.storyboard */,
 				C3E7C02622E65A4100F3019E /* Assets.xcassets */,
 				C3E7C02822E65A4100F3019E /* LaunchScreen.storyboard */,
@@ -229,6 +232,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3E7C04E22E665B800F3019E /* rplogo.png in Resources */,
 				C3E7C02A22E65A4100F3019E /* LaunchScreen.storyboard in Resources */,
 				C3E7C02722E65A4100F3019E /* Assets.xcassets in Resources */,
 				C3E7C02522E65A3E00F3019E /* Main.storyboard in Resources */,
