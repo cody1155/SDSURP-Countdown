@@ -11,6 +11,8 @@ import UIKit
 class ViewController: UIViewController {
 
     var seconds = 30
+    var Start = true
+    var countup = 1
     
     var timer = Timer()
     
@@ -21,8 +23,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var sliderOutlet: UISlider!
     @IBAction func slider(_ sender: UISlider) {
         
-        positiveSeconds = Int(sender.value)
-        labelTime.text = String(positiveSeconds)
+        seconds = Int(sender.value)
+        labelTime.text = String(seconds)
     }
     
     @IBOutlet weak var startOutlet: UIButton!
@@ -37,43 +39,40 @@ class ViewController: UIViewController {
     }
     
     @objc func counter(){
-        if (seconds == 20){
-            labelProcedure.text = "Countdown Started"
+        
+        //add another variable except make it equal to seconds * -1 and update that
+        //label after htting '0'
+        
+        if (seconds != 0){
+            if (Start){
+                labelProcedure.text = "Countdown Started"
+                Start = false
+            }
             
+            if (seconds == 15){
+                labelProcedure.text = "Turn Launch and \nIgnitor Safety off"
+            }
+        
+            if (seconds == 3){
+                labelProcedure.text = "Ignition!"
+            }
+        
+            seconds -= 1
+            labelTime.text = String(seconds)
         }
         
-        seconds -= 1
-        labelTime.text = String(seconds)
-        
-        
-        if (seconds == 15){
-            labelProcedure.text = "Turn Launch and \nIgnitor Safety off"
-            
+        else {
+            labelTime.text = "+ " + String(countup)
+            countup += 1
         }
         
-        if (seconds == 2){
-            labelProcedure.text = "Ignition!"
-            
-        }
-        
-        
-        if (seconds == 0)
-        {
-            labelTime.text = String(0)
-            //timer.invalidate()
-            
-            
-            sliderOutlet.isHidden = false
-            startOutlet.isHidden = false
-            
-        }
-    
     }
     
     @IBAction func reset(_ sender: Any) {
     
         timer.invalidate()
         seconds = 30
+        countup = 1
         sliderOutlet.setValue(30, animated: true)
         labelTime.text = "30"
         labelProcedure.text = "SDSU RP"
